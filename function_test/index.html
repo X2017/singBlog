@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nodeNameTest</title>
+	<script type="text/javascript" src="tool.js"></script>
+	<script type="text/javascript" src="base.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var wait = $('#photo .wait');
+			// function imgWait() {
+			// 	setTimeout(function () {
+					for (var i = 0; i < wait.length(); i++) {
+						console.log(i);
+						console.log($('#photo .wait').getThis(i));
+						// if ((getInner().height + getScroll().top) >= offsetTop($('#photo').first())) {
+						// 	//$(_this).attr('big_src');
+						// }
+					}
+			// 	},100);
+			// }
+		});
+	</script>
+</head>
+<body>
+	<div id="photo">
+		<img class="wait" src="" big_src="../images/p1.jpg" />
+		<img class="wait" src="" big_src="../images/p1.jpg" />
+		<img class="wait" src="" big_src="../images/p1.jpg" />
+	</div>
+</body>
+</html>
